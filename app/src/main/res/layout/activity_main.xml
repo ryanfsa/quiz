@@ -17,7 +17,8 @@
         android:id="@+id/main_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start"
+        android:text="@string/start"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +28,7 @@
         android:id="@+id/main_startText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="bruh"
+        android:text="@string/quiz"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -39,13 +40,14 @@
         android:id="@+id/main_group_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="main_a,main_b,main_c,main_d,main_questionText,main_image" />
+        app:constraint_referenced_ids="main_a,main_b,main_c,main_d,main_questionText,main_image,main_questionScore" />
 
     <Button
         android:id="@+id/main_a"
-        android:layout_width="117dp"
+        android:layout_width="150dp"
         android:layout_height="58dp"
-        android:text="A"
+        android:autoSizeTextType="uniform"
+        app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/main_b"
         app:layout_constraintHorizontal_bias="0.5"
@@ -55,9 +57,10 @@
 
     <Button
         android:id="@+id/main_b"
-        android:layout_width="117dp"
+        android:layout_width="150dp"
         android:layout_height="58dp"
-        android:text="B"
+        android:autoSizeTextType="uniform"
+        app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -67,9 +70,10 @@
 
     <Button
         android:id="@+id/main_c"
-        android:layout_width="117dp"
+        android:layout_width="150dp"
         android:layout_height="58dp"
-        android:text="C"
+        android:autoSizeTextType="uniform"
+        app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/main_d"
         app:layout_constraintHorizontal_bias="0.5"
@@ -79,9 +83,10 @@
 
     <Button
         android:id="@+id/main_d"
-        android:layout_width="117dp"
+        android:layout_width="150dp"
         android:layout_height="58dp"
-        android:text="D"
+        android:autoSizeTextType="uniform"
+        app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -102,14 +107,15 @@
 
     <TextView
         android:id="@+id/main_questionText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:textSize="30dp"
         app:layout_constraintVertical_bias="0.346" />
 
     <androidx.constraintlayout.widget.Group
@@ -122,7 +128,8 @@
         android:id="@+id/main_restart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Restart"
+        android:text="@string/restart"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -134,7 +141,8 @@
         android:id="@+id/main_exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Exit"
+        android:text="@string/exit"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -146,12 +154,24 @@
         android:id="@+id/main_endText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.271" />
+
+    <TextView
+        android:id="@+id/main_questionScore"
+        android:layout_width="109dp"
+        android:layout_height="64dp"
+        android:text="0/0"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

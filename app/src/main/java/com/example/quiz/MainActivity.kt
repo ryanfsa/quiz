@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var buttons : Array<Button>
     lateinit var image : ImageView
     lateinit var questionText : TextView
+    lateinit var questionScore : TextView
     lateinit var endText : TextView
     lateinit var restart : Button
     lateinit var exit : Button
@@ -42,6 +43,8 @@ class MainActivity : AppCompatActivity() {
         start  = findViewById(R.id.main_start)
         startText = findViewById(R.id.main_startText)
         image = findViewById(R.id.main_image)
+        questionText = findViewById(R.id.main_questionText)
+        questionScore = findViewById(R.id.main_questionScore)
         startText.textSize = 30f
 
         buttons = arrayOf<Button>(
@@ -49,8 +52,7 @@ class MainActivity : AppCompatActivity() {
             findViewById(R.id.main_b),
             findViewById(R.id.main_c),
             findViewById(R.id.main_d))
-        questionText = findViewById(R.id.main_questionText)
-        questionText.textSize = 30f
+
         buttons.forEach{it.textSize = 20f}
 
         questionGroup.visibility = View.INVISIBLE
@@ -64,6 +66,7 @@ class MainActivity : AppCompatActivity() {
         restart.setOnClickListener {
             startGroup.visibility = View.VISIBLE
             endGroup.visibility = View.INVISIBLE
+            questionScore.text = "0/0"
             quiz.question = -1
             quiz.score = 0
         }
@@ -80,7 +83,9 @@ class MainActivity : AppCompatActivity() {
         buttons[quiz.qc].setBackgroundColor(Color.rgb(0f,0.5f,0f))
     }
     fun setTexts(q : Question){
-        buttons.forEach{ it.setBackgroundColor(Color.BLUE) }
+        var bcol = randomColor(0.2f,0.4f)
+        buttons.forEach{ it.setBackgroundColor(bcol) }
+        findViewById<ConstraintLayout>(R.id.main_layout).setBackgroundColor(randomColor(0.8f,0.2f))
         questionText.text = q.text
         buttons[0].text = q.a
         buttons[1].text = q.b
@@ -95,6 +100,9 @@ class MainActivity : AppCompatActivity() {
         else{
             image.visibility = View.INVISIBLE
         }
+    }
+    fun randomColor(x : Float, y : Float) : Int{
+        return Color.rgb(x+y*Math.random().toFloat(),x+y*Math.random().toFloat(),x+y*Math.random().toFloat())
     }
     fun end(){
         questionGroup.visibility = View.INVISIBLE

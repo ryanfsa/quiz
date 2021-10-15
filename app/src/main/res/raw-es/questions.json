@@ -1,6 +1,6 @@
 [
     {
-        "text"    : "What country is this?",
+        "text"    : "¿Que pais es este?",
         "correct" : "1",
         "a"       : "Malaysia",
         "b"       : "Cambodia",
@@ -9,7 +9,7 @@
         "image"   : "q1"
     },
     {
-        "text"    : "What river is Washington crossing in this painting?",
+        "text"    : "¿Qué río está cruzando Washington en esta pintura?",
         "correct" : "2",
         "a"       : "Lexington",
         "b"       : "Hudson",
@@ -18,7 +18,7 @@
         "image"   : "q2"
     },
     {
-        "text"    : "What is the 2nd tallest mountain?",
+        "text"    : "¿Cuál es la segunda montaña más alta?",
         "correct" : "0",
         "a"       : "K2",
         "b"       : "Everest",
@@ -27,7 +27,7 @@
         "image"   : "q3"
     },
     {
-        "text"    : "What is the widest river?",
+        "text"    : "¿Cuál es el río más ancho?",
         "correct" : "1",
         "a"       : "Nile",
         "b"       : "Amazon",
@@ -36,7 +36,7 @@
         "image"   : "q4"
     },
     {
-        "text"    : "Who is this?",
+        "text"    : "¿Quien es este?",
         "correct" : "1",
         "a"       : "Socrates",
         "b"       : "Aristotle",
@@ -45,7 +45,7 @@
         "image"   : "q5"
     },
     {
-        "text"    : "When was Ceasar killed?",
+        "text"    : "¿Cuándo fue asesinado Ceasar?",
         "correct" : "0",
         "a"       : "44 BC",
         "b"       : "213 AD",
@@ -54,7 +54,7 @@
         "image"   : "q6"
     },
     {
-        "text"    : "What year was the U.S. constitution ratified",
+        "text"    : "¿En qué año se ratificó la constitución de los Estados Unidos?",
         "correct" : "2",
         "a"       : "1783",
         "b"       : "1776",
@@ -63,30 +63,30 @@
         "image"   : "q7"
     },
     {
-        "text"    : "What animal is this?",
+        "text"    : "¿Que animal es este?",
         "correct" : "0",
-        "a"       : "Baluchistan pygmy jerboa",
-        "b"       : "Kangaroo Rat",
-        "c"       : "Guinea Pig",
+        "a"       : "Jerboa pigmeo de Baluchistán",
+        "b"       : "Rata canguro",
+        "c"       : "Conejillo de indias",
         "d"       : "Chinchilla",
         "image"   : "q8"
     },
     {
-        "text"    : "Which cat is the biggest?",
+        "text"    : "¿Qué gato es el más grande?",
         "correct" : "2",
-        "a"       : "Tiger",
-        "b"       : "Lion",
+        "a"       : "Tigre",
+        "b"       : "León",
         "c"       : "Liger",
         "d"       : "Jaguar",
         "image"   : "q9"
     },
     {
-        "text"    : "Which is the fastest?",
+        "text"    : "¿Cual es el mas rapido?",
         "correct" : "0",
-        "a"       : "Pigeon",
-        "b"       : "Cheetah",
-        "c"       : "Sailfish",
-        "d"       : "Pronghorn",
+        "a"       : "Paloma",
+        "b"       : "Leopardo",
+        "c"       : "Pez vela",
+        "d"       : "Berrendo",
         "image"   : "q10"
     }
 ]

@@ -12,6 +12,7 @@ class Quiz(val questions : List<Question>, val main : MainActivity) {
         if(waiting){return}
         waiting = true
         if(x == qc){ score++ }
+        main.questionScore.text = "$score/"+(question+1)
         main.scoreColor()
         Handler().postDelayed({
             nextQuestion()
